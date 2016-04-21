@@ -1,0 +1,43 @@
+[2016-04-21T17:33:48+03:00] INFO: Forking chef instance to converge...
+[2016-04-21T17:33:48+03:00] INFO: *** Chef 12.9.38 ***
+[2016-04-21T17:33:48+03:00] INFO: Platform: x86_64-linux
+[2016-04-21T17:33:48+03:00] INFO: Chef-client pid: 3276
+[2016-04-21T17:33:55+03:00] INFO: Run List is [role[nginx], recipe[web]]
+[2016-04-21T17:33:55+03:00] INFO: Run List expands to [web]
+[2016-04-21T17:33:55+03:00] INFO: Starting Chef Run for Chef4-2
+[2016-04-21T17:33:55+03:00] INFO: Running start handlers
+[2016-04-21T17:33:55+03:00] INFO: Start handlers complete.
+[2016-04-21T17:33:58+03:00] INFO: Loading cookbooks [web@1.0.0, web_nginx@1.0.0, web_apache@1.0.0]
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web/metadata.rb~ in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web/README.md in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_nginx/providers/default.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web/metadata.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_nginx/metadata.rb~ in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_nginx/templates/default/index.erb~ in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web/resources/default.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web/recipes/default.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_nginx/recipes/default.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_nginx/templates/default/index.erb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_nginx/README.md in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_nginx/metadata.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_apache/providers/default.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_apache/recipes/default.rb in the cache.
+[2016-04-21T17:33:59+03:00] INFO: Storing updated cookbooks/web_apache/templates/default/noindex.erb~ in the cache.
+[2016-04-21T17:34:00+03:00] INFO: Storing updated cookbooks/web_apache/metadata.rb~ in the cache.
+[2016-04-21T17:34:00+03:00] INFO: Storing updated cookbooks/web_apache/README.md in the cache.
+[2016-04-21T17:34:00+03:00] INFO: Storing updated cookbooks/web_apache/templates/default/noindex.erb in the cache.
+[2016-04-21T17:34:01+03:00] INFO: Storing updated cookbooks/web_apache/metadata.rb in the cache.
+[2016-04-21T17:34:01+03:00] WARN: Using an LWRP provider by its name (WebNginx) directly is no longer supported in Chef 12 and will be removed.  Use Chef::ProviderResolver.new(node, resource, action) instead. at /var/chef/cache/cookbooks/web_nginx/recipes/default.rb:8:in `block in from_file' at /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
+[2016-04-21T17:34:01+03:00] WARN: Using an LWRP provider by its name (WebNginx) directly is no longer supported in Chef 12 and will be removed.  Use Chef::ProviderResolver.new(node, resource, action) instead. at /var/chef/cache/cookbooks/web_nginx/recipes/default.rb:13:in `block in from_file' at /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
+[2016-04-21T17:34:01+03:00] INFO: Processing web[install nginx] action install (web_nginx::default line 6)
+[2016-04-21T17:34:01+03:00] INFO: Processing yum_package[nginx] action install (/var/chef/cache/cookbooks/web_nginx/providers/default.rb line 2)
+[2016-04-21T17:34:14+03:00] INFO: yum_package[nginx] installing nginx-1.0.15-12.el6 from epel repository
+[2016-04-21T17:34:24+03:00] INFO: yum_package[nginx] installed nginx at 1.0.15-12.el6
+[2016-04-21T17:34:24+03:00] INFO: Processing web[setup default page] action setup (web_nginx::default line 11)
+[2016-04-21T17:34:24+03:00] INFO: Processing template[/usr/share/nginx/html/index.html] action create (/var/chef/cache/cookbooks/web_nginx/providers/default.rb line 8)
+[2016-04-21T17:34:24+03:00] INFO: template[/usr/share/nginx/html/index.html] backed up to /var/chef/backup/usr/share/nginx/html/index.html.chef-20160421173424.559346
+[2016-04-21T17:34:24+03:00] INFO: template[/usr/share/nginx/html/index.html] updated file contents /usr/share/nginx/html/index.html
+[2016-04-21T17:34:25+03:00] INFO: Chef Run complete in 30.200925516 seconds
+[2016-04-21T17:34:25+03:00] INFO: Running report handlers
+[2016-04-21T17:34:25+03:00] INFO: Report handlers complete
+[2016-04-21T17:34:25+03:00] INFO: Sending resource update report (run-id: 0dd8a4a7-234c-49a4-9562-635385b0a9a7)
