@@ -1,0 +1,17 @@
+#
+# Cookbook Name :: web
+# Recipe :: default
+#
+
+if node.role?('nginx')
+   include_recipe 'web_nginx'
+
+elsif node.role?('apache')
+   include_recipe 'web_apache'
+
+else
+  log 'message' do
+  message 'Role not defined. Nothing to do.'
+  level :info
+  end
+end

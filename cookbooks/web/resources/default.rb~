@@ -1,0 +1,4 @@
+actions :install, :setup, :start, :stop, :restart, :reload
+default_action :install
+
+attribute :info , :kind_of => String, default: "Some info from Chef!"

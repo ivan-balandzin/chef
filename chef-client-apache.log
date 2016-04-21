@@ -1,0 +1,30 @@
+[2016-04-21T17:24:34+03:00] INFO: Forking chef instance to converge...
+[2016-04-21T17:24:34+03:00] INFO: *** Chef 12.9.38 ***
+[2016-04-21T17:24:34+03:00] INFO: Platform: x86_64-linux
+[2016-04-21T17:24:34+03:00] INFO: Chef-client pid: 5228
+[2016-04-21T17:24:39+03:00] INFO: Run List is [role[apache], recipe[web]]
+[2016-04-21T17:24:39+03:00] INFO: Run List expands to [web]
+[2016-04-21T17:24:39+03:00] INFO: Starting Chef Run for Chef4
+[2016-04-21T17:24:39+03:00] INFO: Running start handlers
+[2016-04-21T17:24:39+03:00] INFO: Start handlers complete.
+[2016-04-21T17:24:42+03:00] INFO: Loading cookbooks [web@1.0.0, web_nginx@1.0.0, web_apache@1.0.0]
+[2016-04-21T17:24:42+03:00] INFO: Storing updated cookbooks/web_apache/templates/default/noindex.erb~ in the cache.
+[2016-04-21T17:24:42+03:00] INFO: Storing updated cookbooks/web_nginx/providers/default.rb in the cache.
+[2016-04-21T17:24:42+03:00] INFO: Storing updated cookbooks/web_apache/templates/default/noindex.erb in the cache.
+[2016-04-21T17:24:42+03:00] INFO: Storing updated cookbooks/web_nginx/templates/default/index.erb in the cache.
+[2016-04-21T17:24:42+03:00] INFO: Storing updated cookbooks/web_nginx/templates/default/index.erb~ in the cache.
+[2016-04-21T17:24:42+03:00] INFO: Storing updated cookbooks/web_apache/providers/default.rb in the cache.
+[2016-04-21T17:24:42+03:00] WARN: Using an LWRP provider by its name (WebApache) directly is no longer supported in Chef 12 and will be removed.  Use Chef::ProviderResolver.new(node, resource, action) instead. at /var/chef/cache/cookbooks/web_apache/recipes/default.rb:7:in `block in from_file' at /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
+[2016-04-21T17:24:42+03:00] WARN: Using an LWRP provider by its name (WebApache) directly is no longer supported in Chef 12 and will be removed.  Use Chef::ProviderResolver.new(node, resource, action) instead. at /var/chef/cache/cookbooks/web_apache/recipes/default.rb:12:in `block in from_file' at /opt/chef/embedded/lib/ruby/gems/2.1.0/gems/chef-12.9.38/lib/chef/event_dispatch/dispatcher.rb:43:in `call'
+[2016-04-21T17:24:42+03:00] INFO: Processing web[install apache] action install (web_apache::default line 5)
+[2016-04-21T17:24:42+03:00] INFO: Processing yum_package[httpd] action install (/var/chef/cache/cookbooks/web_apache/providers/default.rb line 2)
+[2016-04-21T17:24:45+03:00] INFO: yum_package[httpd] installing httpd-2.2.15-47.el6.centos.4 from updates repository
+[2016-04-21T17:24:47+03:00] INFO: yum_package[httpd] installed httpd at 2.2.15-47.el6.centos.4
+[2016-04-21T17:24:47+03:00] INFO: Processing web[setup default page] action setup (web_apache::default line 10)
+[2016-04-21T17:24:48+03:00] INFO: Processing template[/var/www/error/noindex.html] action create (/var/chef/cache/cookbooks/web_apache/providers/default.rb line 8)
+[2016-04-21T17:24:48+03:00] INFO: template[/var/www/error/noindex.html] backed up to /var/chef/backup/var/www/error/noindex.html.chef-20160421172448.010057
+[2016-04-21T17:24:48+03:00] INFO: template[/var/www/error/noindex.html] updated file contents /var/www/error/noindex.html
+[2016-04-21T17:24:49+03:00] INFO: Chef Run complete in 10.194195973 seconds
+[2016-04-21T17:24:49+03:00] INFO: Running report handlers
+[2016-04-21T17:24:49+03:00] INFO: Report handlers complete
+[2016-04-21T17:24:49+03:00] INFO: Sending resource update report (run-id: 6d924129-16b7-4805-9958-11cf930b633e)

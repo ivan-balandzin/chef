@@ -1,0 +1,6 @@
+name             'web_nginx'
+maintainer       'ivan_balandzin'
+maintainer_email 'ivan_balandzin@epam.com'
+description      'Installs and configures NGINX web server'
+version          '1.0.0'
+depends	'web'
