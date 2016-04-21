@@ -1,0 +1,13 @@
+{
+  "name": "application_repo",
+  "description": "application_repo",
+  "cookbook_versions": {
+    "jboss": "= 1.0"
+  },
+  "default_attributes": {
+    "jboss": {
+      "app_url": "http://www.cumulogic.com/download/Apps/hudson.zip",
+      "app_name": "hudson"
+    }
+  }
+}
