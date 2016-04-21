@@ -1,0 +1,7 @@
+{
+  "name": "jboss-role",
+  "description": "jboss installation",
+  "run_list": [
+    "recipe[jboss]"
+  ]
+}
