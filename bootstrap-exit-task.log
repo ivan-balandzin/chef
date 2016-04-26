@@ -1,0 +1,14 @@
+127.0.0.1 -----> Existing Chef installation detected
+127.0.0.1 Starting the first Chef Client run...
+127.0.0.1 Starting Chef Client, version 12.9.38[0m
+127.0.0.1 Creating a new client identity for ChefET using the validator key.[0m
+127.0.0.1 resolving cookbooks for run list: [][0m
+127.0.0.1 Synchronizing Cookbooks:[0m
+127.0.0.1 Installing Cookbook Gems:[0m
+127.0.0.1 Compiling Cookbooks...[0m
+127.0.0.1 [2016-04-25T10:10:19+03:00] WARN: Node ChefET has an empty run list.
+127.0.0.1 Converging 0 resources[0m
+127.0.0.1 [0m
+127.0.0.1 Running handlers:[0m
+127.0.0.1 Running handlers complete
+127.0.0.1 [0mChef Client finished, 0/0 resources updated in 09 seconds[0m

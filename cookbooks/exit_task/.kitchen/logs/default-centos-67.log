@@ -1,0 +1,41 @@
+I, [2016-04-25T19:51:56.536328 #23482]  INFO -- default-centos-67: -----> Verifying <default-centos-67>...
+I, [2016-04-25T19:51:56.538162 #23482]  INFO -- default-centos-67: Preparing files for transfer
+I, [2016-04-25T19:51:57.166481 #23482]  INFO -- default-centos-67: -----> Busser installation detected (busser)
+I, [2016-04-25T19:51:57.166623 #23482]  INFO -- default-centos-67: Installing Busser plugins: busser-serverspec
+I, [2016-04-25T19:51:59.632721 #23482]  INFO -- default-centos-67: Plugin serverspec already installed
+I, [2016-04-25T19:52:00.003111 #23482]  INFO -- default-centos-67: Removing /tmp/verifier/suites/serverspec
+I, [2016-04-25T19:52:00.018475 #23482]  INFO -- default-centos-67: Transferring files to <default-centos-67>
+I, [2016-04-25T19:52:00.584999 #23482]  INFO -- default-centos-67: -----> Running serverspec test suite
+I, [2016-04-25T19:52:00.686264 #23482]  INFO -- default-centos-67: /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.4.1/lib:/tmp/verifier/gems/gems/rspec-core-3.4.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+I, [2016-04-25T19:52:01.252807 #23482]  INFO -- default-centos-67: 
+I, [2016-04-25T19:52:01.253013 #23482]  INFO -- default-centos-67: packages are installed
+I, [2016-04-25T19:52:01.544571 #23482]  INFO -- default-centos-67: [32m  nginx, git, jenkins and java are installed[0m
+I, [2016-04-25T19:52:01.545238 #23482]  INFO -- default-centos-67: 
+I, [2016-04-25T19:52:01.545366 #23482]  INFO -- default-centos-67: services is running
+I, [2016-04-25T19:52:01.816437 #23482]  INFO -- default-centos-67: [32m  nginx,tomcat and jenkins services[0m
+I, [2016-04-25T19:52:01.846117 #23482]  INFO -- default-centos-67: [32m  nginx, tomcat and jenkins ports[0m
+I, [2016-04-25T19:52:01.846219 #23482]  INFO -- default-centos-67: 
+I, [2016-04-25T19:52:01.846253 #23482]  INFO -- default-centos-67: Command "ls /opt/apache-tomcat-7.0.61"
+I, [2016-04-25T19:52:01.846863 #23482]  INFO -- default-centos-67:   stdout
+I, [2016-04-25T19:52:01.858113 #23482]  INFO -- default-centos-67: [32m    should match /conf/[0m
+I, [2016-04-25T19:52:01.858865 #23482]  INFO -- default-centos-67:   stdout
+I, [2016-04-25T19:52:01.861198 #23482]  INFO -- default-centos-67: [32m    should match /bin/[0m
+I, [2016-04-25T19:52:01.861358 #23482]  INFO -- default-centos-67:   stdout
+I, [2016-04-25T19:52:01.862010 #23482]  INFO -- default-centos-67: [32m    should match /webapps/[0m
+I, [2016-04-25T19:52:01.863119 #23482]  INFO -- default-centos-67: 
+I, [2016-04-25T19:52:01.863274 #23482]  INFO -- default-centos-67: Command "cat /etc/nginx/conf.d/virtual.conf"
+I, [2016-04-25T19:52:01.863370 #23482]  INFO -- default-centos-67:   stdout
+I, [2016-04-25T19:52:01.872381 #23482]  INFO -- default-centos-67: [32m    should match /mnt-lab/[0m
+I, [2016-04-25T19:52:01.872573 #23482]  INFO -- default-centos-67:   stdout
+I, [2016-04-25T19:52:01.874063 #23482]  INFO -- default-centos-67: [32m    should match /jenkins/[0m
+I, [2016-04-25T19:52:01.874203 #23482]  INFO -- default-centos-67: 
+I, [2016-04-25T19:52:01.874296 #23482]  INFO -- default-centos-67: Command "ls /var/lib/jenkins/jobs"
+I, [2016-04-25T19:52:01.874379 #23482]  INFO -- default-centos-67:   stdout
+I, [2016-04-25T19:52:01.899347 #23482]  INFO -- default-centos-67: [32m    should match /deploy/[0m
+I, [2016-04-25T19:52:01.899547 #23482]  INFO -- default-centos-67:   stdout
+I, [2016-04-25T19:52:01.900957 #23482]  INFO -- default-centos-67: [32m    should match /build/[0m
+I, [2016-04-25T19:52:01.902134 #23482]  INFO -- default-centos-67: 
+I, [2016-04-25T19:52:01.902288 #23482]  INFO -- default-centos-67: Finished in 0.65024 seconds (files took 0.57332 seconds to load)
+I, [2016-04-25T19:52:01.902402 #23482]  INFO -- default-centos-67: [32m10 examples, 0 failures[0m
+I, [2016-04-25T19:52:01.902526 #23482]  INFO -- default-centos-67: 
+I, [2016-04-25T19:52:01.975579 #23482]  INFO -- default-centos-67: Finished verifying <default-centos-67> (0m5.47s).

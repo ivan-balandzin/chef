@@ -1,0 +1,6 @@
+---
+hostname: 127.0.0.1
+port: '2222'
+username: vagrant
+ssh_key: "/root/chef.repo/ChefExitTask/cookbooks/exit_task/.kitchen/kitchen-vagrant/kitchen-exit_task-default-centos-67/.vagrant/machines/default/virtualbox/private_key"
+last_action: verify

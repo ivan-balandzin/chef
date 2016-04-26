@@ -1,0 +1,44 @@
+root@ChefET:~/chef.repo/ChefExitTask/cookbooks/exit_task$ kitchen verify default-centos-67
+-----> Starting Kitchen (v1.6.0)
+-----> Verifying <default-centos-67>...
+       Preparing files for transfer
+-----> Busser installation detected (busser)
+       Installing Busser plugins: busser-serverspec
+       Plugin serverspec already installed
+       Removing /tmp/verifier/suites/serverspec
+       Transferring files to <default-centos-67>
+-----> Running serverspec test suite
+       /opt/chef/embedded/bin/ruby -I/tmp/verifier/suites/serverspec -I/tmp/verifier/gems/gems/rspec-support-3.4.1/lib:/tmp/verifier/gems/gems/rspec-core-3.4.4/lib /opt/chef/embedded/bin/rspec --pattern /tmp/verifier/suites/serverspec/\*\*/\*_spec.rb --color --format documentation --default-path /tmp/verifier/suites/serverspec
+       
+       packages are installed
+         nginx, git, jenkins and java are installed
+       
+       services is running
+         nginx,tomcat and jenkins services
+         nginx, tomcat and jenkins ports
+       
+       Command "ls /opt/apache-tomcat-7.0.69"
+         stdout
+           should match /conf/
+         stdout
+           should match /bin/
+         stdout
+           should match /webapps/
+       
+       Command "cat /etc/nginx/conf.d/virtual.conf"
+         stdout
+           should match /mnt-lab/
+         stdout
+           should match /jenkins/
+       
+       Command "ls /var/lib/jenkins/jobs"
+         stdout
+           should match /deploy/
+         stdout
+           should match /build/
+       
+       Finished in 0.67035 seconds (files took 0.57332 seconds to load)
+       10 examples, 0 failures
+       
+       Finished verifying <default-centos-67> (0m5.47s).
+-----> Kitchen is finished. (0m5.84s)

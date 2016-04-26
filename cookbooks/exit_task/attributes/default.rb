@@ -1,0 +1,5 @@
+default["nginx"]["port"] = "80"
+default["jenkins"]["port"] = "8090"
+default["tomcat"]["url"] = "http://www-eu.apache.org/dist/tomcat/tomcat-7/v7.0.69/bin/apache-tomcat-7.0.69.tar.gz"
+default["tomcat"]["port"] = "8091"
+default["maven"]["url"] = "http://www-eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz"
